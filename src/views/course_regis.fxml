@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.control_courseRegis">
+   <children>
+      <TextField fx:id="txtsearch" layoutX="123.0" layoutY="111.0" prefHeight="36.0" prefWidth="634.0" />
+      <Label layoutX="377.0" layoutY="33.0" text="Đăng Kí Môn Học" />
+      <Label layoutX="32.0" layoutY="25.0" text="Hello: " />
+      <Label fx:id="username" layoutX="94.0" layoutY="25.0" text="user" />
+      <TableView fx:id="table_Search" layoutX="123.0" layoutY="147.0" prefHeight="212.0" prefWidth="634.0">
+        <columns>
+          <TableColumn fx:id="subcodecol" prefWidth="133.0" text="mã môn học" />
+          <TableColumn fx:id="namecol" prefWidth="229.0" text="tên môn học" />
+            <TableColumn fx:id="classcodecol" prefWidth="109.0" text="mã lớp" />
+            <TableColumn fx:id="numcol" prefWidth="162.0" text="số tín chỉ" />
+        </columns>
+      </TableView>
+      <Button layoutX="705.0" layoutY="112.0" mnemonicParsing="false" onAction="#btn_search" prefHeight="36.0" prefWidth="52.0" text="Button" />
+      <TableView fx:id="table_waitRegister" layoutX="123.0" layoutY="390.0" prefHeight="170.0" prefWidth="634.0">
+        <columns>
+          <TableColumn fx:id="registMamhCol" prefWidth="143.0" text="Mã môn học" />
+          <TableColumn fx:id="regisTenmhCol" prefWidth="118.0" text="tên môn học" />
+            <TableColumn fx:id="regisMalopCol" prefWidth="125.0" text="mã lớp học" />
+            <TableColumn fx:id="regisSotcCol" prefWidth="81.0" text="số tín chỉ" />
+            <TableColumn fx:id="regisTrangthaiCol" prefWidth="81.0" text="trạng thái" />
+        </columns>
+      </TableView>
+      <Button layoutX="40.0" layoutY="86.0" mnemonicParsing="false" onAction="#refreshTable" text="back" />
+      <Label layoutX="123.0" layoutY="89.0" text="(*) Double click để đăng kí" textFill="#ff0404">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="123.0" layoutY="368.0" prefHeight="19.0" prefWidth="191.0" text="(*) Double click để hủy hoặc lưu" textFill="#ff0404">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Button fx:id="btndel" layoutX="35.0" layoutY="400.0" mnemonicParsing="false" onAction="#deleteCourse" text="hủy" />
+   </children>
+</AnchorPane>

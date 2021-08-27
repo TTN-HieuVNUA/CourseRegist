@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.controller_login">
+   <children>
+      <Pane id="container" prefHeight="355.0" prefWidth="643.0">
+         <children>
+            <TextField id="user" fx:id="txtusername" layoutX="166.0" layoutY="102.0" prefHeight="33.0" prefWidth="313.0" promptText="username" stylesheets="@style.css">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font></TextField>
+            <Button id="button1" fx:id="btnlogin" layoutX="167.0" layoutY="252.0" mnemonicParsing="false" onAction="#switchtoscenehome" prefHeight="24.0" prefWidth="313.0" text="login" textFill="#fff8f8">
+               <styleClass>
+                  <String fx:value="button" />
+                  <String fx:value="button" />
+               </styleClass>
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+            <Pane id="logo" layoutY="309.0" prefHeight="46.0" prefWidth="40.0" />
+            <Label layoutX="165.0" layoutY="36.0" text="Student managment Vnua" textFill="#fffbfb">
+               <font>
+                  <Font name="Bradley Hand ITC" size="27.0" />
+               </font>
+            </Label>
+            <Label layoutX="54.0" layoutY="324.0" text="GVHD: Trần Trung Hiếu" textFill="#e8e8e8" />
+            <CheckBox layoutX="167.0" layoutY="217.0" mnemonicParsing="false" text="remember password" textFill="#fffdfd" />
+            <Button id="forgot" layoutX="377.0" layoutY="213.0" mnemonicParsing="false" text="forgot password?" textFill="#fff8f8" />
+            <PasswordField id="pass" fx:id="txtpassword" layoutX="165.0" layoutY="165.0" prefHeight="33.0" prefWidth="313.0" promptText="password" stylesheets="@style.css">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font></PasswordField>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

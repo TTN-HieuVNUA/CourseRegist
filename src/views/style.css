@@ -1,0 +1,29 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+#container{
+	-fx-background-image: url("../image/image.jpg");
+	-fx-background-size: 100%;
+}
+#logo{
+	-fx-background-image: url("../image/vnua.png");
+	-fx-background-size: 100%;
+	-fx-background-repeat: no-repeat ;
+}
+#user{
+	-fx-background-color: rgba(0,0,0,0);
+	-fx-border-width: 0 0 1 0;
+	-fx-border-color: white;
+}
+#pass{
+	-fx-background-color: rgba(0,0,0,0);
+	-fx-border-width: 0 0 1 0;
+	-fx-border-color: white;
+}
+#forgot{
+	-fx-background-color: rgba(0,0,0,0);
+}
+#button1{
+-fx-background-color: #ff3366;
+}
+.backgroundColumn{
+	-fx-background-color: red;
+}
